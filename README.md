@@ -16,3 +16,13 @@ git remote add origin https://github_address
 git push origin master 
 git pull origin master 
 ```
+## PYTHON FOUNDATION:
+
+- Primitive Variables 
+- Function
+- Object
+- Class
+- Class deep dive
+- Operation & Conditions 
+- Loops
+-... 
