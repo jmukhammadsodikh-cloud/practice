@@ -1,3 +1,4 @@
+
 print("===number===")
 # in JAVA: variable is name of storage location
 # in PYTHON: variable is named reference
@@ -13,6 +14,7 @@ print(f"the count: {count} and type: {count_type}")
 result1 = count.bit_count()  # method
 result2 = count.numerator    # state
 print(result1, result2)
+
 
 print("===string===")
 # methods: upper() lower() title() find() replace()
@@ -39,3 +41,19 @@ print(f"the updated course: (5) {course}")
 
 
 print("===boolean===")
+# functions > type() input() bool() int() str()
+y = input("Give your value for y:")
+print("y:", y)
+
+result = y.isnumeric()
+print(f"the input value is numeric: {result}")
+
+# TRUTHY vs FALSY values
+# TRUTHY > true 100 -100 "MIT"
+# FAlSY > false 0 "" None
+test_falsy = "" or False or 0 or None or 100
+print("The test_falsy:", bool(test_falsy))
+# falsy qiymatlar ichida bitta true bolsa falsy = truega aylanadi
+
+test_truthy = "MIT"
+print("The test_truthy:", bool(test_truthy))
