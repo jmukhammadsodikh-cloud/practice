@@ -51,3 +51,18 @@ def give_greet2(name, age=29):
 # Default argumentin parametrda berib ketamiz default holatida
 result3 = give_greet2(name="Justin")
 print("result3:", result3)
+
+
+print("======= Scope=========")
+
+b = 40  # 3
+# Define
+
+
+def calculate(a):  # 2
+    c = a + b  # 1
+    print(f"c value:", {c})
+
+
+# Call
+calculate(90)
