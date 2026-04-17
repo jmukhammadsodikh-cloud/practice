@@ -27,3 +27,27 @@ print("result1:", result1)
 
 result2 = greeting("MARTIN")
 print("result2:", result2)
+
+print("=======Keyword vs default arguments=========")
+# Define
+
+
+def give_greet(name, age):
+    print("give_greet is executed")
+    return f"Hi {name}, you are {age} years old!"
+
+
+# Call
+# Keyword argument shu kodimizni tiniqroq qlish uchun
+result3 = give_greet(name="Justin", age=28)
+print("result3:", result3)
+
+
+def give_greet2(name, age=29):
+    print("give_greet is executed")
+    return f"Hi {name}, you are {age} years old!"
+
+
+# Default argumentin parametrda berib ketamiz default holatida
+result3 = give_greet2(name="Justin")
+print("result3:", result3)
