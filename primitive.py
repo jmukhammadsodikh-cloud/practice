@@ -1,4 +1,3 @@
-
 print("===number===")
 # in JAVA: variable is name of storage location
 # in PYTHON: variable is named reference
@@ -21,7 +20,6 @@ print("===string===")
 course = "MIT Ai Python Foundation"
 result = type(course)
 print(f"the type of course (1): {result}")
-
 result = course.title()
 print(f"the course title (2): {result}")
 

@@ -14,4 +14,5 @@ function countLetter(letter, word) {
     return count;
 }
 const result = countLetter("a", "assalomu aleykum");
-console.log("result:", result); 
+console.log("result:", result);
+
