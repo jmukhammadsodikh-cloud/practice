@@ -47,3 +47,11 @@ else:
 
 finally:
     print(f"Final closing logic")
+
+# KEY error yoki ATTRUBUTE error bittada oldini olmoqchi bolsak
+# except (KeyError, AttributeError) as err:
+ #   print(f"No origin state property found", err)
+
+# ERROR farqi qiziq bolmasa hammasini bittada oldini olmoqchi bolsak
+# except (Exepcion) as err:
+ #   print(f"No origin state property found", err)
