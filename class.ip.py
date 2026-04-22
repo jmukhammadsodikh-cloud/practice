@@ -94,3 +94,42 @@ print(Dog.description)
 # bu yerda parent classdagi static state yoki methodlarni ham bemalol ozidan uning farzandiga beishimiz mumkun ekan
 
 # !! Muhum hamda parent otasiga public hamda protected propertilarini path qila olar ekan
+
+print("==============POLYMORPHISM=================")
+# Bir methodning bir necha shakliga ega bolishi bir narsani kop turiga ega bolishi
+
+
+class Animal:  # Parent
+    description = "The class is parent for animals"
+
+    def __init__(self, voice):
+        self.voice = voice
+
+    def make_voice(self):
+        print(f"the animal can make voice: {self.voice}")
+
+
+class Dog(Animal):
+
+    def __init__(self, name, sound, voice):
+        self.name = name
+        self.sound = sound
+        super().__init__(voice)
+
+    def introduce(self):
+        print(f"{self.name} says: {self.sound} - {self.sound}")
+
+    def protect(self):
+        print(f"Yes i can protect you")
+
+    def make_voice(self):
+        print(f"the {self.name} says {self.voice}")
+
+
+# bu make voice methodi parent classda va buni child classlar qabul qilayapt bu tabiy
+dog.make_voice()
+fish.make_voice()
+# lekin shu make voice child classdaham bolsachi qaysi ishga tushadi
+# Animal make voice or child make voice = JAVOB Dogning ichidagi  make voice ishga tushadi
+
+# Demak Polymorphism degani bir hil methodimizni turli hil shakillari bolishi mumkun ekan parent hamda child classlarda
