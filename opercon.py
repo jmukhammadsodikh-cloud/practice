@@ -46,3 +46,44 @@ m = c
 
 print("c is d", data)  # reference solishtiradi malumot manzilini
 print("c is m", c is m)
+
+
+print("=========CONDITION=========")
+x = 45  # truthy hamda falsy qaytaradi
+if x > 50:
+    print("case A:")
+elif x > 100:
+    print("case B")
+else:
+    print("case C")
+
+
+print("=========LOGICAL OPERATORS=========")
+# Mantiqiy operatorlar hosil qilsak ham bolar ekan
+print("-----")
+age = 16
+person = None
+if age > 18:
+    print("adult")
+else:
+    print("child")
+# bu mantiqni yanada soddaroq varianti bor Logical operator orqali (ternary operator)
+# Ternary = qisqa satir bilan kop ishlatiladi
+age1 = 20
+person_1 = "adult" if age > 18 else "minor"
+print("person1:", person_1)
+
+print("------")
+is_student = True
+is_admin = True
+is_parent = True
+is_guest = False
+
+if not is_student:
+    print("welcome here, do you want to be student")
+elif is_admin:
+    print("Please go to this office")
+elif is_guest and is_parent:
+    print("waiting room is over there")
+else:
+    print("Other cases")
