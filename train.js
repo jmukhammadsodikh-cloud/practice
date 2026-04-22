@@ -1,9 +1,47 @@
-/*B-TASK (Nodejs)
+/*
+C-TASK (NodeJS)
 
-// Masalaning sharti
+Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
+MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true; */
+
+
+function checkFruits(a, b) {
+    if (a.length !== b.length) {
+        return false;
+    }
+    let sortedA = a.split('').sort().join('');
+    let sortedB = b.split('').sort().join('');
+    return sortedA === sortedB
+}
+console.log(checkFruits("apricot", "mandarine"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+B-TASK (Nodejs)
+
+ // Masalaning sharti
 Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
-MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi. */
-
+MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi. 
+*/
+/*
 // Masalaning yechimi
 function countDigits(string) {
     let count = 0;
@@ -15,15 +53,15 @@ function countDigits(string) {
 }
 const result1 = countDigits("I was born in 2005")
 console.log("result1:", result1)
-
-
+*/
 /*
-A-TASK ========= (NodeJS)
+A - TASK ========= (NodeJS)
 
 // Masalaning sharti
 Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
 MASALAN countLetter("e", "engineer") 3ni return qiladi.
-
+*/
+/*
 // Masalani yechimi loop for bilan qlamiz
 
 function countLetter(letter, word) {
