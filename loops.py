@@ -57,4 +57,4 @@ while True:
         print(f"You found number in {count} steps")
         break
     else:
-        print("Wrong please find again")
+        print("Wrong please find")
