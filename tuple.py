@@ -15,13 +15,13 @@ car_dic = {"brand": "Ferrari", "year": 1995}
 letters = list("Hello world")
 person_dic = dict(name="Martin", age=32)
 
-# LIST = ozgartirish mumkun qiymatin
+# LIST = ozgartirish mumkun qiymatin============
 fruits = ["apple", "banana", "kiwi", "apricot"]
 print("before list", fruits)
 fruits[2] = "lemon"
 print("after list", fruits)
 
-# Malumotlar ozgarishin oldini olish uchun TUPLE ishlatamiz
+# Malumotlar ozgarishin oldini olish uchun TUPLE ishlatamiz======================
 # Tuple ichida joylashgan qiymatlarni umuman ozgartirib bolmaydi
 animals = ("monkey", "cat", "dog", "elephant")
 # tuple = string bollean null number hosil qilaoladi
@@ -37,7 +37,7 @@ groups = ("MIT", "DEVEX", "FLEXY", "MG")
 print(f"the:a {a} and the d: {c}")
 # Qoida = () qavis qoyish kerak
 
-# argument yoyish
+# argument yoyish==================
 # *args > tuple = qachonki argumentlarimiz soni noaniq bolsa bitta qlib ovolamiz argsga wrap qib qoyamiz
 
 
@@ -52,7 +52,7 @@ def calculate(*args):
 
 calculate(10, 20)
 
-# **kwargs > dictionary
+# **kwargs > dictionary==============
 
 
 def introduce(**kwargs):
@@ -62,3 +62,24 @@ def introduce(**kwargs):
 
 introduce(name="Henry", age=32, nation="Korea")
 introduce(name="Marco", age=22, nation="Uzbek")
+
+# *args / **kwargs bir vahtda ==========
+
+
+def greet(*args, **kwargs):
+    print("*args>", args)
+    print("**kwargs>", kwargs)
+
+
+greet("hi", True, 23, name="John", age=22,)
+
+
+print("=========================================== Zip ================================================")
+# zip maxsus object 2ta tuple birlashtirib beradi
+tuple1 = (1, 2, 3, 4, 5)
+tuple2 = ("a", "b", "c", "d")
+
+zipped = zip(tuple1, tuple2)
+print(zipped)
+result = list(zipped)
+print(result)
