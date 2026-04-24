@@ -35,10 +35,10 @@ print("=========================================== Unpacking arguments =========
 groups = ("MIT", "DEVEX", "FLEXY", "MG")
 (a, b, *c) = groups
 print(f"the:a {a} and the d: {c}")
-
 # Qoida = () qavis qoyish kerak
 
-# args > tuple = qachonki argumentlarimiz soni noaniq bolsa bitta qlib ovolamiz
+# argument yoyish
+# *args > tuple = qachonki argumentlarimiz soni noaniq bolsa bitta qlib ovolamiz argsga wrap qib qoyamiz
 
 
 def calculate(*args):
@@ -51,3 +51,14 @@ def calculate(*args):
 
 
 calculate(10, 20)
+
+# **kwargs > dictionary
+
+
+def introduce(**kwargs):
+    print(
+        f"Hi I am {kwargs["name"]} and I am {kwargs["age"]} and come from {kwargs["nation"]}")
+
+
+introduce(name="Henry", age=32, nation="Korea")
+introduce(name="Marco", age=22, nation="Uzbek")
