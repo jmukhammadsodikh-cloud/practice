@@ -42,7 +42,7 @@ b = {20, 40}
 result1 = a | b     # union => bu ikkala toplamni bitta set qlib beradi
 result2 = a & b    # intersection => ikkita setda bir hil bolgan toplamni beradi
 result3 = a - b   # difference => ikkita setni ayrib beradi
-result4 = a ^ b  # symetric difference => ikkita setda bir hil bolmagan toplamni beradigit
+result4 = a ^ b  # symetric difference => ikkita setda bir hil bolmagan toplamni beradigi
 
 print("result1:", result1)
 print("result2:", result2)

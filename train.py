@@ -12,14 +12,14 @@
 # task C Shunday function tuzing, u 2ta string parametr ega bolsin,
 # hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
 # MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
-
+'''
 def check_names(name1, name2):
     # Harflarni alifbo tartibida taxlab, keyin solishtiramiz
     return sorted(name1) == sorted(name2)
 
 
 print(check_names("Alex", "Kevin"))
-
+'''
 
 # D-TASK (NodeJS)
 # Shunday function tuzingki unga integerlardan iborat array pass bolsin va

@@ -12,7 +12,7 @@ function getReverse(name) {
     }
     return b
 }
-console.log(getReverse("Kelly"))
+console.log(getReverse("Samigjonov"))
 
 
 
