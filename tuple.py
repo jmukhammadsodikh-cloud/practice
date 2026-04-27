@@ -38,6 +38,8 @@ print(f"the:a {a} and the d: {c}")
 # Qoida = () qavis qoyish kerak
 
 # argument yoyish==================
+
+
 # *args > tuple = qachonki argumentlarimiz soni noaniq bolsa bitta qlib ovolamiz argsga wrap qib qoyamiz
 
 
