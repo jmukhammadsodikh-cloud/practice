@@ -42,3 +42,12 @@ cars = [
 ]
 first_cars = [moshina[1] for moshina in cars if moshina[1] > 80]
 print("first_cars:", first_cars)
+
+
+print("===== Set and dictionary comprehension ===========")
+numbs = [12, 2, 8, 9, 3, 13, 87]
+first_numbs = {*numbs}  # a version
+print("first_numbs", first_numbs)
+
+dict_people = {odam[0] for odam in people}  # b version
+print("dict_people", dict_people)
