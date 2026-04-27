@@ -45,10 +45,10 @@ letters.insert(0, "z")   # add value front
 print(f"the insert letters: {letters}")
 
 size = len(letters) - 1
-result1 = letters.pop(size)   # pop behind with len
+result1 = letters.pop(size)   # pop behind with len ohiridan olib tashlaydi
 print(f"the pop result1: {result1} and letters: {letters}")
 
-result2 = letters.pop(0)    # pop front only with index
+result2 = letters.pop(0)    # pop front only with index boshidan olib tashlaydi
 print(f"the pop result2: {result2} and letters: {letters}")
 
 print("===========")
