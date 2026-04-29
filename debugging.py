@@ -4,11 +4,12 @@
     (3) debugging
 '''
 
+from PIL import Image
 import turtle
 print("======== python packages & core packages ============")
 ''' Python packages/modules: core, file and external '''
 # core packages => python documentation > https://docs.python.org/3/library
-# python bilan birga keladigon package turtle
+# python bilan birga keladigon core package => turtle
 
 # ichki core packages python
 t = turtle.Turtle()
@@ -36,3 +37,15 @@ with open("material/message.txt", "r") as your_file:
 
 print("Done")
 # Avtomatik ravishda close qladi
+
+print("======== package maneger & external package ============")
+# python bilan birga kelmaydigan packagelar royhati => External packages > https://pypi.org/
+# image bilan ishlashga pillow package
+# package manager pip => bu python bilan keladigon manager bu orqali external package ornatamiz
+# package manager => pip pipenv npm yarn composer brew
+
+# working with images => pillow
+with Image.open("material/logo.png") as img_obj:
+    resized_img = img_obj.resize((200, 200))
+    resized_img.show()
+    resized_img.save("material/sample.png")
