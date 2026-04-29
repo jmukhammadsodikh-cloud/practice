@@ -43,3 +43,19 @@ def get_reverse(name):
 
 
 print(get_reverse("samigjonov"))
+
+
+''' F-TASK (NodeJS)
+Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, 
+agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
+MASALAN: getReverse("hello") return true return qiladi'''
+
+
+def find_doublers(expression):
+    for harf in expression:
+        if expression.count(harf) > 1:
+            return True
+    return False
+
+
+print(find_doublers("kill"))
