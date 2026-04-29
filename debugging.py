@@ -49,3 +49,5 @@ with Image.open("material/logo.png") as img_obj:
     resized_img = img_obj.resize((200, 200))
     resized_img.show()
     resized_img.save("material/sample.png")
+
+print("======== python packages & core packages ============")
