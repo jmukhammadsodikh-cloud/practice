@@ -17,7 +17,7 @@ t.shape("turtle")  # cursor
 t.speed(8)  # teslik
 t.circle(150)
 
-# turtle.done()
+turtle.done()
 # we can also draw pizza via turtle module
 
 print("---------------")
@@ -50,4 +50,18 @@ with Image.open("material/logo.png") as img_obj:
     resized_img.show()
     resized_img.save("material/sample.png")
 
-print("======== python packages & core packages ============")
+print("======== debugging ============")
+# debugging => mantiqda hatolikni osonlik bilan topish
+# mashinani izidan borib tahlil qlish
+
+
+def get_summary(*args):
+    total_amount = 0
+    for a in args:
+        total_amount += a
+        return total_amount  # find the bug via degugging
+
+
+test = 100
+result = get_summary(1, 2, 3, 4, 5)
+print("result:", result)
