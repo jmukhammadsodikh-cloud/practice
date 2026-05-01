@@ -2,7 +2,7 @@
 Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, 
 agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
 MASALAN: getReverse("hello") return true return qiladi 
-*/
+
 
 function findDoublers(str) {
     for (let i = 0; i < str.length; i++) {
@@ -14,31 +14,7 @@ function findDoublers(str) {
 }
 
 console.log(findDoublers("kill"));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 /* E-TASK (NodeJS)====================
 Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni
@@ -116,7 +92,8 @@ console.log(countDigits("welcome123mybeautiful12guests"))
 
 // Masalaning sharti
 Shunday 2 parametrli function tuzing,
-hamda birinchi parametrdagi letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
+hamda birinchi parametrdagi letterni ikkinchi parametrdagi
+sozdan qatnashga sonini return qilishi kerak boladi.
 MASALAN countLetter("e", "engineer") 3ni return qiladi.
 
 

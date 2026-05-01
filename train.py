@@ -1,61 +1,21 @@
-#  A task Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi
-# letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
-# MASALAN countLetter("e", "engineer") 3ni return qiladi.
+'''G-TASK (PYTHON)
 
-
-# // B Masalaning sharti va yechimi
-# Shunday function tuzing, u 1ta string parametrga ega bolsin,
-# hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
-# MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
-
-
-# task C Shunday function tuzing, u 2ta string parametr ega bolsin,
-# hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
-# MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
-'''
-def check_names(name1, name2):
-    # Harflarni alifbo tartibida taxlab, keyin solishtiramiz
-    return sorted(name1) == sorted(name2)
-
-
-print(check_names("Alex", "Kevin"))
-'''
-
-# D-TASK (NodeJS)
-# Shunday function tuzingki unga integerlardan iborat array pass bolsin va
-# function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
-# MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
-
-
-'''E-TASK (NodeJS)===================
-
-Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni
-teskari qilib return qilsin.
-MASALAN: getReverse("hello") return qilsin "olleh"
+Shunday function tuzingki unga integerlardan iborat array pass bolsin va function
+bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
+MASALAN: get_highest_index([5, 21, 12, 21, 8]) return qiladi 1 sonini.
 '''
 
 
-def get_reverse(name):
-    x = ""
-    for abc in name:
-        x = abc + x
-    return x
+def get_highest_index(numbers):
+    max_number = numbers[0]
+    max_index = 0
+
+    for a, b in enumerate(numbers):
+        if b > max_number:
+            max_number = b  # endi eng katta son 22 bo‘ldi
+            max_index = a    # bu sonning indexini saqladik
+
+    return max_index
 
 
-print(get_reverse("samigjonov"))
-
-
-''' F-TASK (NodeJS)
-Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, 
-agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
-MASALAN: getReverse("hello") return true return qiladi'''
-
-
-def find_doublers(expression):
-    for harf in expression:
-        if expression.count(harf) > 1:
-            return True
-    return False
-
-
-print(find_doublers("kill"))
+print(get_highest_index([10, 3, 9, 22, 12, 51, 2, 44]))

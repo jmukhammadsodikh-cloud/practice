@@ -49,5 +49,5 @@ numbs = [12, 2, 8, 9, 3, 13, 87]
 first_numbs = {*numbs}  # a version
 print("first_numbs", first_numbs)
 
-dict_people = {odam[0] for odam in people}  # b version
+dict_people = {odam[0]: odam[1] for odam in people}  # b version
 print("dict_people", dict_people)
