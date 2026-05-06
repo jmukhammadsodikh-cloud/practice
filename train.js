@@ -1,7 +1,8 @@
+
 /* H-TASK (NodeJS)
 shunday function tuzing, u integerlardan iborat arrayni argument sifatida qabul qilib,
 faqat positive qiymatlarni olib string holatda return qilsin
-MASALAN: getPositive([1, -4, 2]) return qiladi "12" */
+MASALAN: getPositive([1, -4, 2]) return qiladi "12" 
 
 // Masalaning yechimi
 
@@ -17,8 +18,17 @@ function getPositiveNumbs(numbs) {
 let a = (getPositiveNumbs([10, -3, 22, 8, -19]))
 console.log(a)
 
-
-
+function getDigits(word) {
+    let a = ""
+    for (b of word) {
+        if (Number(b)) {
+            a = a + b
+        }
+    }
+    return a
+}
+console.log(getDigits("m1asha3qqa7t"))
+*/
 
 /*F-TASK (NodeJS)
 Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, 
