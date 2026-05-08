@@ -1,3 +1,32 @@
+/* J-TASK (NodeJS)
+Shunday function yozing, u parametridagi array ichida eng kop takrorlangan raqamni topib qaytarsin.
+MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4 */
+function majorityElement(digits) {
+    let count = 0
+    let result = 0
+    for (let x of digits) {
+        count = 0
+        for (let y of digits) {
+            if (x === y) {
+                count++
+            }
+        }
+        if (count > 1) {
+            result = x
+        }
+    }
+    return result
+}
+
+console.log(majorityElement([1, 2, 3, 4, 5, 4, 3, 4]))
+
+
+
+
+
+
+
+
 
 /* H-TASK (NodeJS)
 shunday function tuzing, u integerlardan iborat arrayni argument sifatida qabul qilib,
