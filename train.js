@@ -1,6 +1,25 @@
+/* L-TASK (NodeJS)
+
+Shunday function yozing, u string qabul qilsin va string ichidagi
+hamma sozlarni chappasiga yozib va sozlar ketma-ketligini buzmasdan stringni qaytarsin.
+MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc"; 
+
+function reverseSentence(sentence) {
+    let result = ""
+
+    for (word of sentence.split(" ")) {
+        result += word.split("").reverse().join("") + " "
+    }
+
+    return result
+}
+
+console.log(reverseSentence("soon we will make succes story"))
+*/
+
 /* J-TASK (NodeJS)
 Shunday function yozing, u parametridagi array ichida eng kop takrorlangan raqamni topib qaytarsin.
-MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4 */
+MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4 
 function majorityElement(digits) {
     let count = 0
     let result = 0
@@ -19,15 +38,7 @@ function majorityElement(digits) {
 }
 
 console.log(majorityElement([1, 2, 3, 4, 5, 4, 3, 4]))
-
-
-
-
-
-
-
-
-
+*/
 /* H-TASK (NodeJS)
 shunday function tuzing, u integerlardan iborat arrayni argument sifatida qabul qilib,
 faqat positive qiymatlarni olib string holatda return qilsin
