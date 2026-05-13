@@ -2,7 +2,7 @@
 
 Shunday function yozing, u string qabul qilsin va string ichidagi
 hamma sozlarni chappasiga yozib va sozlar ketma-ketligini buzmasdan stringni qaytarsin.
-MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc"; 
+MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc"; */
 
 function reverseSentence(sentence) {
     let result = ""
@@ -15,7 +15,7 @@ function reverseSentence(sentence) {
 }
 
 console.log(reverseSentence("soon we will make succes story"))
-*/
+
 
 /* J-TASK (NodeJS)
 Shunday function yozing, u parametridagi array ichida eng kop takrorlangan raqamni topib qaytarsin.
